@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="NetDevPack" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Car.DomainHelper\Cars.DomainHelper.csproj" />
+    <ProjectReference Include="..\Cars.Application\Cars.Application.csproj" />
+    <ProjectReference Include="..\Cars.Infra.CrossCutting.Bus\Cars.Infra.CrossCutting.Bus.csproj" />
+    <ProjectReference Include="..\Cars.Infra.Data\Cars.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

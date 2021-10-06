@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>b543be42-f7ab-48b6-b633-72d6fb529fb8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="NetDevPack" Version="5.3.0" />
+    <PackageReference Include="NetDevPack.Identity" Version="5.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Car.Constant\Cars.Constant.csproj" />
+    <ProjectReference Include="..\Cars.Application\Cars.Application.csproj" />
+    <ProjectReference Include="..\Cars.Infra.CrossCutting.Identity\Cars.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\Cars.Infra.CrossCutting.IoC\Cars.Infra.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\Cars.Infra.Data\Cars.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
